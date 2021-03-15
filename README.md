@@ -18,9 +18,9 @@ composer create-project laravel/laravel [プロジェクト名] --prefer-dist "6
 
 ```
 
-_プロジェクト名が、developの場合
+_プロジェクト名が、developの場合_
 
-_composer create-project laravel/laravel develop --prefer-dist "6.*"
+_composer create-project laravel/laravel develop --prefer-dist "6.*"_
 
 ## nginxの設定
 

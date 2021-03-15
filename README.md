@@ -35,9 +35,12 @@ docker restart laravel_nginx
 
 ```
 
-http://localhost:8081にアクセスするとLaravelのホーム画面が表示されたらLaravelのインストールが成功
+↓のURにアクセスして、Laravelのホーム画面が表示されたらLaravelのインストールが成功してます。
 
-## LaravelからMYSQLに接続できるようにする
+http://localhost:8081
+
+
+## LaravelのMYSQL接続情報を修正
 
 ### .env
 
@@ -50,6 +53,9 @@ DB_USERNAME=laravel
 DB_PASSWORD=kjfdslkjfdsfds
 ```
 
+## Laravelのマイグレーションで検証
+
+MYSQLに接続できていればマイグレーションが成功します。
 
 ```
 docker-compose exec php bash
@@ -57,4 +63,5 @@ docker-compose exec php bash
 cd /var/www/develop
 
 php artisan migrate
+
 ```
